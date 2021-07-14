@@ -39,8 +39,7 @@ align-items: center;
 }
 
 .link-button:hover {
-  transform: scaleX(1.5);
-  transition: transform 1s;
+  color: rgb(5, 5, 5);
 }
 
 
@@ -128,6 +127,15 @@ header{
   grid-column-gap: 27px;
   }
 
+  .youtube-video{
+    margin-left: 300px;
+  }
+
+  .highlights {
+    text-align: center;
+    border-radius: 10px;
+  }
+
   footer {
     display: flex;
     flex-direction: column;
@@ -157,7 +165,7 @@ header{
       width: 100%;
 
     }
-.players, .player, .player-info{
+.players, .player, .player-info, .youtube-video{
   grid-template-columns: repeat(1, 1fr);
 }
 
