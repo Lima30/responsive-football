@@ -1,11 +1,138 @@
 /* -------------------Fonts--------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-.header-contents h1{
-    width: 485px;
-  height: 230px;
-  font-weight: bold;
-  font-size: 64px;
-  line-height: 80px;
-  color: #ffffff;
+/* -----------common styles------ */
+body{
+    font-family: "Poppins", sans-serif;
+  
 }
+main{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 42px 50px;
+    /* display: flex; */
+}
+/* .link-button{
+    text-decoration: none;
+    padding: 10px 24px;
+    color: white;
+    background-color: #E02C6D;
+    font-size: 7px;
+    font-weight: 90;
+}
+
+.link-button:hover {
+  transform: scaleX(1.5);
+  transition: transform 1s;
+} */
+
+.link-button {
+  text-decoration: none;
+  padding: 1em 2.4em;
+  color: white;
+  background-color: #e02c6d;
+}
+
+.link-button:hover {
+  transform: scaleX(1.5);
+  transition: transform 1s;
+}
+
+
+/* --------------Header style----------- */
+
+  .header-banner img{
+    width: 556.01px;
+    height: 438px;
+    left: 1299.01px;
+    top: 153px;
+  }
+  .header{
+      display: flex;
+      background-color: darkblue;
+      width: 100%;
+
+  }
+  .header-text h1 {
+    font-size: 64px;
+  }
+  .header-banner img{
+    width: 556.01px;
+    height: 438px;
+    left: 3000px;
+    top: 153px;
+    right:20px;
+    margin-left: 150px;
+  }
+  
+  .header-text h1 {
+    font-size: 64px;
+    color: white;
+    width: 485px;
+    height: 210px;
+  }
+
+  header:hover .header-banner {
+    transform: rotate(360deg);
+    transition: transform 0.5s;
+  }
+
+
+
+  /* ------------players styles--------------- */
+  /* .players{ 
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-column-gap: 30px;
+  }
+  .player img{
+      width: 225px;
+      height: 105px;
+  } */
+  .player-info{
+    width: 330px;
+  height: 474px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  }
+  .player-info img{
+    width: 300px;
+    height: 256px;
+    margin: 16px 0px;
+  }
+  .player{
+    display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+  grid-column-gap: 27px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+  
+  footer img {
+    width: 500px;
+    height: 100px;
+  }
+  .web-link a {
+    background: #e7e7e8;
+    border-radius: 90%;
+    padding: 0.75em;
+    margin: 0 0.7em;
+  }
+  .web-link i {
+    color: #969bab;
+  }
