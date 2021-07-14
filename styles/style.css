@@ -4,13 +4,11 @@
 /* -----------common styles------ */
 body{
     font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
   
 }
-main{
-display: flex;
-flex-direction: column;
-align-items: center;
-}
+
 .container{
     max-width: 1200px;
     margin: auto;
@@ -94,7 +92,7 @@ header{
   }
 
   .youtube-video{
-    margin-left: 300px;
+    margin-left: 10px;
   }
 
   .highlights {
@@ -106,7 +104,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2em;
+    gap: 1.5em;
   }
   
   footer img {
@@ -129,11 +127,59 @@ header{
   @media only screen and (max-width: 688px) {
     .container{
       width: 100%;
-
-    }
-.players, .player, .player-info, .youtube-video{
-  grid-template-columns: repeat(1, 1fr);
+     
+}
+main{
+  margin-bottom: 47px;
+  padding: 0 15px;
 }
 
-    
-  }
+/* .players, .player, .player-info, .youtube-video{
+  grid-template-columns: repeat(1, 1fr);
+  margin: 0;
+} */
+.header{
+  height: auto;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem 0;
+}
+.header-text{
+  margin-bottom: 50px;
+  width: 80%;
+}
+.header-text h1{
+  font-size: 38px;
+}
+.header-banner img{
+height: 300px;
+width: 300px;
+margin: 0;
+}
+.player{
+  display: grid;
+      grid-template-columns: repeat(1, 330px);
+      grid-row-gap: 24px;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+}
+.youtube-video{
+  margin: 0;
+ width: auto;
+ height: auto;
+}
+
+footer img{
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  margin-left: 50px;
+} 
+.web-link{
+ text-align: center;
+
+}
+.highlights{
+  margin-left: 100px;
+}
